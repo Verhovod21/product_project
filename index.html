@@ -9,14 +9,15 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600;700&family=Roboto&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&family=Poppins:wght@400;500;600;700&family=Roboto&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
-  <header class="flex_row">
-    <div class="logo flex_row">
-      <div class="logo_icon">
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="#" class="header__logo  logo">
+      <span class="logo__icon">
         <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M3.13307 34.4587C1.40988 34.4587 1.6082e-07 33.0488 1.49105e-07 31.3256L7.46349e-08 20.372L7.88626 20.372L7.88626 20.3598L12.6263 20.3598C13.8482 20.3285 14.8821 19.2633 14.8821 18.01C14.8821 16.7255 13.8168 15.6602 12.5323 15.6602L6.26614 15.6602L6.26614 15.6622L4.26148e-08 15.6622L2.13007e-08 12.5272C9.58534e-09 10.804 1.40988 9.3941 3.13307 9.3941L12.5323 9.3941C14.9134 9.3941 16.9499 10.24 18.6104 11.9319C20.3023 13.5924 21.1482 15.6289 21.1482 18.01C21.1482 20.3598 20.3336 22.3963 18.6731 24.0569C17.0126 25.7174 15.0074 26.5947 12.6576 26.626L6.26614 26.626L6.26614 31.3256C6.26614 33.0488 4.85626 34.4587 3.13307 34.4587Z"
             fill="#02BC6B" />
@@ -27,66 +28,513 @@
           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 26.6524L6.26614 26.6524L6.26614 31.326C6.26614 33.0492 4.85626 34.4591 3.13307 34.4591C1.40988 34.4591 4.34898e-08 33.0492 3.17744e-08 31.326L0 26.6524Z"
             fill="#028E37" />
         </svg>
-      </div>
-      <h3 class="logo_title">
+      </span>
+      <h3 class="logo__title">
         Product
       </h3>
-    </div>
-    <div class="header_option flex_row">
-      <ul class="product_info flex_row">
-        <li>
-          <a href="#">
-            <span class="not_explicit_btn">Product</span>
-          </a>
+    </a>
+      <ul class="header__list list">
+        <li class="list__item _distance">
+          <a href="#" class="list__link">
+          <span class="list__name _active">Product</span>
+        </a>
         </li>
-        <li>
-          <a href="#">
-            <span class="not_explicit_btn">Customers</span>
-          </a>
+        <li class="list__item _distance">
+          <a href="#" class="list__link">
+          <span class="list__name">Customers</span>
+        </a>
         </li>
-        <li>
-          <a href="#">
-            <span class="not_explicit_btn">Pricing</span>
-          </a>
+        <li class="list__item _distance">
+          <a href="#" class="list__link">
+          <span class="list__name">Pricing</span>
+        </a>
         </li>
-        <li>
-          <a href="#">
-            <span class="not_explicit_btn">Resources</span>
-          </a>
+        <li class="list__item">
+          <a href="#" class="list__link ">
+          <span class="list__name">Resources</span>
+        </a>
         </li>
       </ul>
-      <div class="header_btn flex_row">
-        <a href="#">
-        <span class="sign_in typical_button">Sign in</span>
+      <div class="header__login login">
+        <a href="#" class="login__link _secondary _distance">
+        <span class="link__text _secondary">Sign In</span>
       </a>
-        <a href="#">
-        <span class="sign_up typical_button">Sign Up</span>
+        <a href="#" class="login__link _primery _distance">
+        <span class="link__text">Sign Up</span>
       </a>
-        <button class="theme_switcher">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="32" height="32" rx="16" fill="#F3F3F3"/>
-          <path d="M16 26C21.514 26 26 21.514 26 16C26 10.486 21.514 6 16 6C10.486 6 6 10.486 6 16C6 21.514 10.486 26 16 26ZM16 8C20.411 8 24 11.589 24 16C24 20.411 20.411 24 16 24C11.589 24 8 20.411 8 16C8 11.589 11.589 8 16 8Z" fill="#02897A"/>
-          <path d="M23 16C23 12.134 19.865 9 16 9V23C19.865 23 23 19.866 23 16Z" fill="#02897A"/>
-        </svg>
-      </button>
-        <button class="burger_menu">
+        <div class="header__theme theme">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="16" fill="#F3F3F3" />
+            <path d="M16 26C21.514 26 26 21.514 26 16C26 10.486 21.514 6 16 6C10.486 6 6 10.486 6 16C6 21.514 10.486 26 16 26ZM16 8C20.411 8 24 11.589 24 16C24 20.411 20.411 24 16 24C11.589 24 8 20.411 8 16C8 11.589 11.589 8 16 8Z"
+              fill="#02897A" />
+            <path d="M23 16C23 12.134 19.865 9 16 9V23C19.865 23 23 19.866 23 16Z" fill="#02897A" />
+          </svg>
+        </div>
+        <button class="header__burger">
           <svg width="28" height="31" viewBox="0 0 28 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.5 15.5H24.5" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3.5 7.75H24.5" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3.5 23.25H24.5" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.5 15.5H24.5" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3.5 7.75H24.5" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3.5 23.25H24.5" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
       </div>
     </div>
   </header>
-  <main>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+  <main class="main">
+    <section class="main__introduction introduction">
+      <div class="container">
+        <div class="introduction__content content">
+          <h1 class="content__title">Work at the speed of thought</h1>
+          <p class="content__description">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next
+            user experience.
+          </p>
+          <div class="content__tools tools">
+            <a href="#" class="tools__btn _primery">
+            <span class="tools__text _primery">
+              Get started
+            </span>
+          </a>
+            <a href="#" class="tools__btn _play">
+            <span class="tools__icon">
+              <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8516 8.53032C16.591 8.96531 16.591 10.0347 15.8516 10.4697L2.1954 18.5027C1.44543 18.9439 0.5 18.4031 0.5 17.533V1.46697C0.5 0.596876 1.44543 0.0561381 2.1954 0.497293L15.8516 8.53032Z" fill="#02897A"/>
+              </svg>
+            </span>
+            <span class="tools__text _play">
+              Watch the Video
+            </span>
+          </a>
+          </div>
+        </div>
+        <picture class="introduction__picture">
+          <source srcset="./img/main/amico_size_m.png" media="(max-width: 1224px)">
+          <img alt="" src="./img/main/amico_size_l.png">
+        </picture>
+      </div>
+      <h3 class="introduction__afterword">Product was Built Specifically for You</h3>
+      <div class="column">
+        <div class="introduction__tile tile">
+          <div class="tile__item">
+            <span class="tile__icon">
+            <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1:541)" filter="url(#filter0_d_1:541)">
+              <rect x="4" y="1.830078" width="50" height="50" rx="19" fill="#02897A"/>
+              <path d="M33.1161 27.4283L23.9732 18.2854C23.8661 18.1694 23.7232 18.1158 23.5714 18.1158C23.5 18.1158 23.4196 18.1336 23.3571 18.1604C23.1429 18.2497 23 18.4551 23 18.6872V32.1158C23 32.3479 23.1429 32.5533 23.3571 32.6426C23.4196 32.6694 23.5 32.6872 23.5714 32.6872C23.7232 32.6872 23.8661 32.6247 23.9732 32.5176L26.7589 29.7319L28.4643 33.7676C28.5893 34.0533 28.9196 34.1961 29.2143 34.0711L30.7946 33.4015C31.0804 33.2765 31.2232 32.9461 31.0982 32.6515L29.3036 28.4015H32.7143C32.9464 28.4015 33.1518 28.2586 33.2411 28.0444C33.3304 27.839 33.2857 27.589 33.1161 27.4283Z" fill="white"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_1:541" x="0" y="0.830078" width="59" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1:541"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1:541" result="shape"/>
+              </filter>
+              <rect width="51" height="50" fill="white" transform="translate(4 0.830078)"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </span>
+            <h5 class="tile__title">First click tests</h5>
+            <p class="tile__description">
+              While most people enjoy casino gambling,
+            </p>
+          </div>
+          <div class="tile__item">
+            <span class="tile__icon">
+            <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1:549)" filter="url(#filter0_d_1:549)">
+              <rect x="4" y="0.830078" width="50" height="50" rx="19" fill="#4D8DFF"/>
+              <path d="M29.4821 25.4729L30.6518 26.0176L32.3929 25.4997V24.2854C32.3929 22.2229 30.6518 20.5711 28.5714 20.5711C26.5 20.5711 24.75 22.214 24.75 24.2586V29.7944C24.75 30.3033 24.3393 30.7051 23.8393 30.7051C23.3393 30.7051 22.9286 30.3033 22.9286 29.7944V27.4551H20C20 29.8033 20 29.8301 20 29.8301C20 31.9461 21.7143 33.6604 23.8304 33.6604C25.9286 33.6604 27.6607 31.9729 27.6607 29.8836V24.4194C27.6607 23.9194 28.0714 23.5086 28.5714 23.5086C29.0714 23.5086 29.4821 23.9194 29.4821 24.4194V25.4729ZM34.2143 27.4551V29.9104C34.2143 30.4104 33.8036 30.8122 33.3036 30.8122C32.8036 30.8122 32.3929 30.4104 32.3929 29.9104V27.4997L30.6518 28.0176L29.4821 27.4729V29.8658C29.4821 31.964 31.2054 33.6604 33.3125 33.6604C35.4286 33.6604 37.1429 31.9461 37.1429 29.8301C37.1429 29.8301 37.1429 29.8033 37.1429 27.4551H34.2143Z" fill="white"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_1:549" x="0" y="0.830078" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1:549"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1:549" result="shape"/>
+              </filter>
+              <rect width="50" height="50" fill="white" transform="translate(4 0.830078)"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </span>
+            <h5 class="tile__title">Design surveys</h5>
+            <p class="tile__description">
+              Sports betting, lottery and bingo playing for the fun
+            </p>
+          </div>
+          <div class="tile__item">
+            <span class="tile__icon">
+            <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1:557)" filter="url(#filter0_d_1:557)">
+              <rect x="4" y="0.830078" width="50" height="50" rx="19" fill="#740A76"/>
+              <path d="M29 33.9729C29.1429 33.9729 29.2857 33.9194 29.3929 33.8122L34.9554 28.4551C35.0357 28.3747 37 26.5801 37 24.4372C37 21.8211 35.4018 20.2586 32.7321 20.2586C31.1696 20.2586 29.7054 21.4908 29 22.1872C28.2946 21.4908 26.8304 20.2586 25.2679 20.2586C22.5982 20.2586 21 21.8211 21 24.4372C21 26.5801 22.9643 28.3747 23.0357 28.4372L28.6071 33.8122C28.7143 33.9194 28.8571 33.9729 29 33.9729Z" fill="white"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_1:557" x="0" y="0.830078" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1:557"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1:557" result="shape"/>
+              </filter>
+              <rect width="50" height="50" fill="white" transform="translate(4 0.830078)"/>
+              </clipPath>
+              </defs>
+            </svg>
+
+          </span>
+            <h5 class="tile__title">Preference tests</h5>
+            <p class="tile__description">
+              The Myspace page defines the individual.
+            </p>
+          </div>
+          <div class="tile__item _last">
+            <span class="tile__icon">
+            <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1:565)" filter="url(#filter0_d_1:565)">
+              <rect x="4" y="0.830078" width="50" height="50" rx="19" fill="#F03E3D"/>
+              <path d="M34.5714 20.2586H35.4286C35.5893 20.2586 35.7143 20.1336 35.7143 19.9729V19.4015C35.7143 19.2408 35.5893 19.1158 35.4286 19.1158H22.2857C22.125 19.1158 22 19.2408 22 19.4015V19.9729C22 20.1336 22.125 20.2586 22.2857 20.2586H23.1429C23.1429 23.5622 24.7232 25.9551 26.4732 27.1158C24.7232 28.2765 23.1429 30.6694 23.1429 33.9729H22.2857C22.125 33.9729 22 34.0979 22 34.2586V34.8301C22 34.9908 22.125 35.1158 22.2857 35.1158H35.4286C35.5893 35.1158 35.7143 34.9908 35.7143 34.8301V34.2586C35.7143 34.0979 35.5893 33.9729 35.4286 33.9729H34.5714C34.5714 30.6694 32.9911 28.2765 31.2411 27.1158C32.9911 25.9551 34.5714 23.5622 34.5714 20.2586ZM33.4286 20.2586C33.4286 21.5622 33.1339 22.714 32.6696 23.6872H25.0446C24.5804 22.714 24.2857 21.5622 24.2857 20.2586H33.4286ZM32.9196 31.1158H24.7946C25.4554 29.3926 26.6429 28.1694 27.8304 27.6872H29.8839C31.0714 28.1694 32.2589 29.3926 32.9196 31.1158Z" fill="white"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_1:565" x="0" y="0.830078" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1:565"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1:565" result="shape"/>
+              </filter>
+              <rect width="50" height="50" fill="white" transform="translate(4 0.830078)"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </span>
+            <h5 class="tile__title">Five second tests</h5>
+            <p class="tile__description">
+              Personal choices and the overall personality of the person.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <a href="#" class="introduction__registration"><span class="introduction__text">SIGN UP NOW</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="main__information information">
+      <div class="column">
+        <div class="container _interval">
+          <div class="information_count count">
+            <p class="count__foreword">Effortless Validation for</p>
+            <h3 class="count__title">Management</h3>
+            <p class="count__description _general">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall
+              personality of the person.</p>
+            <p class="count__subtitle">Accessory makers</p>
+            <p class="count__description">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
+            <p class="count__subtitle">Alterationists</p>
+            <p class="count__description">If you are looking for a new way to promote your business that won’t cost you more money,</p>
+          </div>
+          <picture class="information__picture">
+            <source srcset="./img/main/info_size_m.png" media="(max-width: 1224px)">
+            <img src="./img/main/info_size_l.png" alt="">
+          </picture>
+        </div>
+        <div class="container _interval">
+          <picture class="information__picture _secondary">
+            <source srcset="./img/main/info_sec_m.png" media="(max-width: 1224px)">
+            <img src="./img/main/info_sec_l.png" alt="">
+          </picture>
+          <div class="information__count count _secondary">
+            <p class="count__foreword _secondary">Easier decision making for</p>
+            <h3 class="count__title">Customer Support</h3>
+            <p class="count__description _secondary">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall
+              personality of the person. </p>
+            <div class="count__paragraph paragraph">
+              <div class="paragraph__icon">
+                <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1.45833" y="1.7596" width="32.0833" height="32.0833" rx="12.3958" fill="#FF9900" />
+                  <rect x="1.45833" y="1.7596" width="32.0833" height="32.0833" rx="12.3958" stroke="white" stroke-width="2.91667" />
+                  <rect x="1.45833" y="1.7596" width="32.0833" height="32.0833" rx="12.3958" stroke="#FF9900" stroke-width="2.91667" />
+                  <path d="M25.7657 12.5406C25.4533 12.2215 24.9468 12.2215 24.6343 12.5406L15.0498 22.329L11.3657 18.5665C11.0533 18.2475 10.5468 18.2475 10.2343 18.5665C9.92189 18.8856 9.92189 19.4029 10.2343 19.7219L14.4841 24.0621C14.7964 24.3811 15.3033 24.3809 15.6155 24.0621L25.7657 13.696C26.0781 13.377 26.0781 12.8597 25.7657 12.5406Z"
+                    fill="white" />
+                </svg>
+              </div>
+              <span class="paragraph__description">Never worry about overpaying for your energy again.</span>
+            </div>
+            <div class="count__paragraph paragraph">
+              <span class="paragraph__icon">
+                <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1.45833" y="1.7596" width="32.0833" height="32.0833" rx="12.3958" fill="#F03E3D"/>
+                  <rect x="1.45833" y="1.7596" width="32.0833" height="32.0833" rx="12.3958" stroke="white" stroke-width="2.91667"/>
+                  <rect x="1.45833" y="1.7596" width="32.0833" height="32.0833" rx="12.3958" stroke="#F03E3D" stroke-width="2.91667"/>
+                  <path d="M25.7657 12.5406C25.4533 12.2215 24.9468 12.2215 24.6343 12.5406L15.0498 22.329L11.3657 18.5665C11.0533 18.2475 10.5468 18.2475 10.2343 18.5665C9.92189 18.8856 9.92189 19.4029 10.2343 19.7219L14.4841 24.0621C14.7964 24.3811 15.3033 24.3809 15.6155 24.0621L25.7657 13.696C26.0781 13.377 26.0781 12.8597 25.7657 12.5406Z" fill="white"/>
+                </svg>
+              </span>
+              <span class="paragraph__description">We will only switch you to energy companies that we trust and will treat you right</span>
+            </div>
+            <div class="count__paragraph paragraph">
+              <span class="paragraph__icon">
+                <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1.45833" y="1.7596" width="32.0833" height="32.0833" rx="12.3958" fill="#4D8DFF"/>
+                  <rect x="1.45833" y="1.7596" width="32.0833" height="32.0833" rx="12.3958" stroke="white" stroke-width="2.91667"/>
+                  <rect x="1.45833" y="1.7596" width="32.0833" height="32.0833" rx="12.3958" stroke="#4D8DFF" stroke-width="2.91667"/>
+                  <path d="M25.7657 12.5406C25.4533 12.2215 24.9468 12.2215 24.6343 12.5406L15.0498 22.329L11.3657 18.5665C11.0533 18.2475 10.5468 18.2475 10.2343 18.5665C9.92189 18.8856 9.92189 19.4029 10.2343 19.7219L14.4841 24.0621C14.7964 24.3811 15.3033 24.3809 15.6155 24.0621L25.7657 13.696C26.0781 13.377 26.0781 12.8597 25.7657 12.5406Z" fill="white"/>
+                </svg>
+              </span>
+              <span class="paragraph__description">We track the markets daily and know where the savings are.</span>
+            </div>
+          </div>
+        </div>
+        <div class="container _interval">
+          <div class="information_count count">
+            <p class="count__foreword">Optimisation for</p>
+            <h3 class="count__title">Collaborative</h3>
+            <p class="count__description _general">Few would argue that, despite the advancements of feminism over the past three decades, women still face a double
+              standard when it comes to their behavior. </p>
+            <p class="count__subtitle">Accessory makers</p>
+            <p class="count__description">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
+            <p class="count__subtitle">Alterationists</p>
+            <p class="count__description">If you are looking for a new way to promote your business that won’t cost you more money,</p>
+          </div>
+          <picture class="information__picture _top">
+            <source srcset="./img/main/info_th_m.png" media="(max-width: 1224px)">
+            <img src="./img/main/info_th_l.png" alt="">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <div class="decorator">
+      <section class="main__presentation presentation">
+        <div class="presentation__header">
+          <div class="column">
+            <h3 class="presentation__title">Quick & Easy Process</h3>
+            <p class="presentation__description">Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page,
+              Ux/UI?
+            </p>
+          </div>
+        </div>
+        <div class="presentation__review review">
+          <div class="review__part _left">
+            <div class="review__elem elem">
+              <div class="emem_case _left">
+                <img src="./img/main/avatar_1.png" alt="">
+              </div>
+              <div class="elem_message _left">
+                <p class="elem_text">I can take care of your pitch</p>
+              </div>
+            </div>
+            <div class="review__elem elem">
+              <div class="elem_message _right">
+                <p class="elem_text">I can design you website</p>
+              </div>
+              <div class="emem_case">
+                <img src="./img/main/avatar_2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="review__part _right">
+            <div class="review__elem elem _right">
+              <div class="elem_message _right">
+                <p class="elem_text">I can prototype your app</p>
+              </div>
+              <div class="emem_case">
+                <img src="./img/main/avatar_3.png" alt="">
+              </div>
+            </div>
+            <div class="review__elem elem _right">
+              <div class="emem_case">
+                <img src="./img/main/avatar_4.png" alt="">
+              </div>
+              <div class="elem_message _right _last">
+                <p class="elem_text">I can help marketing strategy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="" class="presentation__link"><span class="presentation_value"> Contact our expert</span></a>
+    </div>
+    <div class="information__slides slides">
+      <h2 class="slides__header">Contents Strategies</h2>
+      <p class="slides__description">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+      <div class="slides__box box">
+        <div class="box__slide slide">
+          <div class="slide__container container">
+            <img class="container_img"src="./img/main/slide_1.png" alt="">
+          </div>
+          <span class="slide__info">By <span class="slide__autor">Wahid Ari |</span> 03 March 2019</span>
+          <h4 class="slide__title">Increasing Prosperity With Positive Thinking</h4>
+        </div>
+        <div class="box__slide slide">
+          <div class="slide__container">
+            <img class="container_img" src="./img/main/slide_2.png" alt="">
+          </div>
+          <span class="slide__info">By <span class="slide__autor">Wahid Ari </span>| 03 March 2019</span>
+          <h4 class="slide__title">Motivation Is The First Step To Success</h4>
+        </div>
+        <div class="box__slide slide">
+          <div class="slide__container">
+            <img class="container_img" src="./img/main/slide_3.png" alt="">
+          </div>
+          <span class="slide__info">By <span class="slide__autor">Wahid Ari |</span> 03 March 2019</span>
+          <h4 class="slide__title">Success Steps For Your Personal Or Business</h4>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="slides__handler">
+      <span>
+        <svg width="69" height="16" viewBox="0 0 69 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="8.5" cy="8" r="8" fill="#EFEFEF"/>
+          <circle cx="34.5" cy="8" r="8" fill="#02897A"/>
+          <circle cx="60.5" cy="8" r="8" fill="#EFEFEF"/>
+        </svg>
+      </span>
+    </a>
+    </section>
+    </div>
+    <section class="price">
+    <h2 class="price__title">Price Table</h2>
+    <p class="price__description">We offer competitive price</p>
+    <div class="price__packages packages">
+      <div class="packages_item">
+        <h4 class="item__title">Free</h4>
+        <p class="item__description">Brief price description</p>
+        <div class="item__price">
+          <div class="item__number">0</div>
+          <div class="column _center">
+            <p class="item__currency">$</p>
+            <p class="item__text">Per / month</p>
+          </div>
+        </div>
+        <div class="packages__advantages advantages">
+          <p class="advantages_value">Only 2 Operators</p>
+          <p class="advantages_value">Notifications</p>
+          <p class="advantages_value">Landing Pages</p>
+        </div>
+        <a href="" class="packages_btn"><span class="packages__text">Order Now</span></a>
+      </div>
+      <div class="packages_item">
+        <h4 class="item__title">Standard</h4>
+        <p class="item__description">Brief price description</p>
+        <div class="item__price">
+          <div class="item__number">5</div>
+          <div class="column _center">
+            <span class="item__currency">$</span>
+            <p class="item__text">Per / month</p>
+          </div>
+        </div>
+        <div class="packages__advantages advantages">
+          <p class="advantages_value">5+ Operators</p>
+          <p class="advantages_value">Notifications</p>
+          <p class="advantages_value">Landing Pages</p>
+        </div>
+        <a href="" class="packages_btn"><span class="packages__text">Order Now</span></a>
+      </div>
+      <div class="packages_item">
+        <h4 class="item__title">Premium</h4>
+        <p class="item__description">Brief price description</p>
+        <div class="item__price">
+          <div class="item__number">10</div>
+          <div class="column _center">
+            <p class="item__currency">$</p>
+            <p class="item__text">Per / month</p>
+          </div>
+        </div>
+        <div class="packages__advantages advantages">
+          <p class="advantages_value">10+ Operators</p>
+          <p class="advantages_value">Notifications</p>
+          <p class="advantages_value">Landing Pages</p>
+        </div>
+        <a href="" class="packages_btn"><span class="packages__text">Order Now</span></a>
+      </div>
+    </div> 
+    </section>
+    <section class="main__feedback feedback">
+      <h4 class="feedback__header">Send a message</h4>
+      <form action="" class="feedback__form">
+        <input type="text" class="feedback__contacts" placeholder="Your Name">
+        <input type="text" class="feedback__contacts" placeholder="Your Email">
+        <textarea name="" id="" cols="30" rows="10" class="feedback__value" placeholder="Your Message"></textarea>
+        <button class="feedback__button"><span class="feedback__submit">send</span></button>
+      </form>
+    </section>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="footer__contents contents">
+      <div class="contents__social social">
+        <a href="" class="social__logo logo _secondary">
+          <span class="logo__icon">
+        <svg width="32" height="30" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.13307 34.4587C1.40988 34.4587 1.6082e-07 33.0488 1.49105e-07 31.3256L7.46349e-08 20.372L7.88626 20.372L7.88626 20.3598L12.6263 20.3598C13.8482 20.3285 14.8821 19.2633 14.8821 18.01C14.8821 16.7255 13.8168 15.6602 12.5323 15.6602L6.26614 15.6602L6.26614 15.6622L4.26148e-08 15.6622L2.13007e-08 12.5272C9.58534e-09 10.804 1.40988 9.3941 3.13307 9.3941L12.5323 9.3941C14.9134 9.3941 16.9499 10.24 18.6104 11.9319C20.3023 13.5924 21.1482 15.6289 21.1482 18.01C21.1482 20.3598 20.3336 22.3963 18.6731 24.0569C17.0126 25.7174 15.0074 26.5947 12.6576 26.626L6.26614 26.626L6.26614 31.3256C6.26614 33.0488 4.85626 34.4587 3.13307 34.4587Z"
+            fill="#02BC6B" />
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0975 5.7578C28.5589 9.11993 30.3031 13.3073 30.3031 18.0672C30.3031 22.7473 28.6319 26.9307 25.2239 30.3034L20.3852 25.7508C22.5047 23.6533 23.545 21.128 23.545 18.0672C23.545 14.9832 22.4734 12.4619 20.3031 10.3538L25.0975 5.7578Z"
+            fill="#02897A" />
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5055 -3.14562e-08C37.4911 4.97781 39.9999 11.1499 39.9999 18.2338C39.9999 25.2071 37.5922 31.3753 32.6884 36.3638L28.0186 31.8009C31.6715 28.085 33.4614 23.5781 33.4614 18.2338C33.4614 12.8358 31.6111 8.33276 27.8787 4.60616L32.5055 -3.14562e-08Z"
+            fill="#035B81" />
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 26.6524L6.26614 26.6524L6.26614 31.326C6.26614 33.0492 4.85626 34.4591 3.13307 34.4591C1.40988 34.4591 4.34898e-08 33.0492 3.17744e-08 31.326L0 26.6524Z"
+            fill="#028E37" />
+        </svg>
+      </span>
+      <h3 class="logo__title">
+        Product
+      </h3>
+        </a>
+        <a class="social__icon">
+        <span>
+          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20.0161" r="20" fill="#EDFFFC"/>
+            <path d="M25 10.0161H15C12.2386 10.0161 10 12.2547 10 15.0161V25.0161C10 27.7775 12.2386 30.0161 15 30.0161H25C27.7614 30.0161 30 27.7775 30 25.0161V15.0161C30 12.2547 27.7614 10.0161 25 10.0161Z" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24 19.3859C24.1234 20.2182 23.9812 21.0681 23.5937 21.8149C23.2062 22.5617 22.5931 23.1673 21.8416 23.5456C21.0901 23.9239 20.2384 24.0555 19.4077 23.9219C18.5771 23.7882 17.8097 23.396 17.2148 22.8011C16.6199 22.2062 16.2277 21.4388 16.094 20.6081C15.9604 19.7775 16.092 18.9258 16.4703 18.1743C16.8485 17.4228 17.4541 16.8097 18.2009 16.4222C18.9477 16.0347 19.7977 15.8925 20.63 16.0159C21.4789 16.1418 22.2648 16.5374 22.8716 17.1442C23.4785 17.7511 23.8741 18.537 24 19.3859Z" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M25.5 14.5161H25.51" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        </a>
+        <a class="social__icon">
+        <span >
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#EDFFFC"/>
+            <path d="M26 10H23C21.6739 10 20.4021 10.5268 19.4645 11.4645C18.5268 12.4021 18 13.6739 18 15V18H15V22H18V30H22V22H25L26 18H22V15C22 14.7348 22.1054 14.4804 22.2929 14.2929C22.4804 14.1054 22.7348 14 23 14H26V10Z" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        </a>
+        <a class="social__icon">
+        <span>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#EDFFFC"/>
+            <path d="M31 11.0101C30.0424 11.6855 28.9821 12.2022 27.86 12.5401C27.2577 11.8476 26.4573 11.3567 25.567 11.134C24.6767 10.9112 23.7395 10.9673 22.8821 11.2945C22.0247 11.6218 21.2884 12.2045 20.773 12.9638C20.2575 13.7231 19.9877 14.6224 20 15.5401V16.5401C18.2426 16.5856 16.5013 16.1959 14.931 15.4055C13.3607 14.6151 12.0103 13.4487 11 12.0101C11 12.0101 7 21.0101 16 25.0101C13.9405 26.408 11.4872 27.109 9 27.0101C18 32.0101 29 27.0101 29 15.5101C28.9991 15.2315 28.9723 14.9537 28.92 14.6801C29.9406 13.6735 30.6608 12.4028 31 11.0101V11.0101Z" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        </a>
+      </div>
+      <ul class="contents__scroll scroll">
+        <li class="scroll__item _active">Resource</li>
+        <li class="scroll__item">About us</li>
+        <li class="scroll__item">Blog</li>
+        <li class="scroll__item">Contact</li>
+        <li class="scroll__item">FAQ</li>
+      </ul>
+      <ul class="contents__scroll scroll">
+        <li class="scroll__item _active">Legal Stuff</li>
+        <li class="scroll__item">Disclamer</li>
+        <li class="scroll__item">Financing</li>
+        <li class="scroll__item">Privacy Policy</li>
+        <li class="scroll__item">Terms of Service</li>
+      </ul>
+      <form action="" class="contents__mode mode">
+        <h6 class="mode__title">knowing you're always on the best energy deal. </h6>
+        <input type="text" class="mode__place">
+        <button class="mode__btn"><span class="mode__submit">Sign up Now</span></button>
+      </form>
+    </div>
+    <p>Made With Love By Figmaland All Right Reserved</p>  
+  </footer>
 
 </body>
 
