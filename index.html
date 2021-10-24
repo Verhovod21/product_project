@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>product_project(vehovod)</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&family=Poppins:wght@400;500;600;700&family=Roboto&display=swap"
@@ -70,19 +71,44 @@
             <path d="M23 16C23 12.134 19.865 9 16 9V23C19.865 23 23 19.866 23 16Z" fill="#02897A" />
           </svg>
         </div>
-        <button class="header__burger">
-          <svg width="28" height="31" viewBox="0 0 28 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.5 15.5H24.5" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M3.5 7.75H24.5" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M3.5 23.25H24.5" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
       </div>
+      <input type="checkbox" class="header__burger" name="burger" id="burger">
+      <label for="burger">
+            <div class="burger__menu menu">
+              <span class="menu__global _top"></span>
+              <span class="menu__global _middle"></span>
+              <span class="menu__global _bottom"></span>
+            </div>
+            <div class="header__drop">
+              <ul>
+                <li class="list__item ">
+                  <a href="#" class="list__link">
+                    <span class="list__name _active _white">Product</span>
+                  </a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="list__link">
+                    <span class="list__name _white">Customers</span>
+                  </a>
+                </li>
+                <li class="list__item ">
+                  <a href="#" class="list__link">
+                    <span class="list__name _white">Pricing</span>
+                  </a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="list__link">
+                    <span class="list__name _white">Resources</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </label>
     </div>
   </header>
   <main class="main">
     <section class="main__introduction introduction">
-      <div class="container">
+      <div class="container _reverse">
         <div class="introduction__content content">
           <h1 class="content__title">Work at the speed of thought</h1>
           <p class="content__description">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next
@@ -107,7 +133,9 @@
           </div>
         </div>
         <picture class="introduction__picture">
-          <source srcset="./img/main/amico_size_m.png" media="(max-width: 1224px)">
+          <source srcset="./img/main/amico_size_s.png" media="(max-width: 786px)">
+          <source srcset="./img/main/amico_size_l.png" media="(max-width: 1024px)">
+          <source srcset="./img/main/amico_size_m.png" media="(max-width: 1225px)">
           <img alt="" src="./img/main/amico_size_l.png">
         </picture>
       </div>
@@ -231,7 +259,7 @@
     </section>
     <section class="main__information information">
       <div class="column">
-        <div class="container _interval">
+        <div class="container _reverse _interval">
           <div class="information_count count">
             <p class="count__foreword">Effortless Validation for</p>
             <h3 class="count__title">Management</h3>
@@ -243,12 +271,18 @@
             <p class="count__description">If you are looking for a new way to promote your business that won’t cost you more money,</p>
           </div>
           <picture class="information__picture">
+            <source srcset="./img/main/info_size_xs.png" media="(max-width: 450px)">
+            <source srcset="./img/main/info_size_s.png" media="(max-width: 768px)">
+            <source srcset="./img/main/info_size_l.png" media="(max-width: 1024px)">
             <source srcset="./img/main/info_size_m.png" media="(max-width: 1224px)">
             <img src="./img/main/info_size_l.png" alt="">
           </picture>
         </div>
         <div class="container _interval">
           <picture class="information__picture _secondary">
+            <source srcset="./img/main/info_sec_xs.png" media="(max-width: 450px)">
+            <source srcset="./img/main/info_sec_s.png" media="(max-width: 768px)">
+            <source srcset="./img/main/info_sec_l.png" media="(max-width: 1024px)">
             <source srcset="./img/main/info_sec_m.png" media="(max-width: 1224px)">
             <img src="./img/main/info_sec_l.png" alt="">
           </picture>
@@ -293,7 +327,7 @@
             </div>
           </div>
         </div>
-        <div class="container _interval">
+        <div class="container _reverse _interval">
           <div class="information_count count">
             <p class="count__foreword">Optimisation for</p>
             <h3 class="count__title">Collaborative</h3>
@@ -305,6 +339,9 @@
             <p class="count__description">If you are looking for a new way to promote your business that won’t cost you more money,</p>
           </div>
           <picture class="information__picture _top">
+            <source srcset="./img/main/info_th_xs.png" media="(max-width: 450px)">
+            <source srcset="./img/main/info_th_s.png" media="(max-width: 768px)">
+            <source srcset="./img/main/info_th_l.png" media="(max-width: 1224px)">
             <source srcset="./img/main/info_th_m.png" media="(max-width: 1224px)">
             <img src="./img/main/info_th_l.png" alt="">
           </picture>
@@ -323,7 +360,7 @@
         </div>
         <div class="presentation__review review">
           <div class="review__part _left">
-            <div class="review__elem elem">
+            <div class="review__elem elem _left">
               <div class="emem_case _left">
                 <img src="./img/main/avatar_1.png" alt="">
               </div>
@@ -331,7 +368,7 @@
                 <p class="elem_text">I can take care of your pitch</p>
               </div>
             </div>
-            <div class="review__elem elem">
+            <div class="review__elem elem _right">
               <div class="elem_message _right">
                 <p class="elem_text">I can design you website</p>
               </div>
@@ -349,7 +386,7 @@
                 <img src="./img/main/avatar_3.png" alt="">
               </div>
             </div>
-            <div class="review__elem elem _right">
+            <div class="review__elem elem _left">
               <div class="emem_case">
                 <img src="./img/main/avatar_4.png" alt="">
               </div>
@@ -367,7 +404,7 @@
       <div class="slides__box box">
         <div class="box__slide slide">
           <div class="slide__container container">
-            <img class="container_img"src="./img/main/slide_1.png" alt="">
+            <img class="container_img" src="./img/main/slide_1.png" alt="">
           </div>
           <span class="slide__info">By <span class="slide__autor">Wahid Ari |</span> 03 March 2019</span>
           <h4 class="slide__title">Increasing Prosperity With Positive Thinking</h4>
@@ -388,73 +425,73 @@
         </div>
       </div>
     </div>
-    <a href="#" class="slides__handler">
+    <a href="#" class="slides__handler handler">
       <span>
         <svg width="69" height="16" viewBox="0 0 69 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="8.5" cy="8" r="8" fill="#EFEFEF"/>
-          <circle cx="34.5" cy="8" r="8" fill="#02897A"/>
-          <circle cx="60.5" cy="8" r="8" fill="#EFEFEF"/>
+          <circle class="handler__point" cx="8.5" cy="8" r="8" fill="#EFEFEF"/>
+          <circle class="handler__point" cx="34.5" cy="8" r="8" fill="#EFEFEF"/>
+          <circle class="handler__point" cx="60.5" cy="8" r="8" fill="#EFEFEF"/>
         </svg>
       </span>
     </a>
     </section>
     </div>
     <section class="price">
-    <h2 class="price__title">Price Table</h2>
-    <p class="price__description">We offer competitive price</p>
-    <div class="price__packages packages">
-      <div class="packages_item">
-        <h4 class="item__title">Free</h4>
-        <p class="item__description">Brief price description</p>
-        <div class="item__price">
-          <div class="item__number">0</div>
-          <div class="column _center">
-            <p class="item__currency">$</p>
-            <p class="item__text">Per / month</p>
+      <h2 class="price__title">Price Table</h2>
+      <p class="price__description">We offer competitive price</p>
+      <div class="price__packages packages">
+        <div class="packages_item">
+          <h4 class="item__title">Free</h4>
+          <p class="item__description">Brief price description</p>
+          <div class="item__price">
+            <div class="item__number">0</div>
+            <div class="column _center">
+              <p class="item__currency">$</p>
+              <p class="item__text">Per / month</p>
+            </div>
           </div>
-        </div>
-        <div class="packages__advantages advantages">
-          <p class="advantages_value">Only 2 Operators</p>
-          <p class="advantages_value">Notifications</p>
-          <p class="advantages_value">Landing Pages</p>
-        </div>
-        <a href="" class="packages_btn"><span class="packages__text">Order Now</span></a>
-      </div>
-      <div class="packages_item">
-        <h4 class="item__title">Standard</h4>
-        <p class="item__description">Brief price description</p>
-        <div class="item__price">
-          <div class="item__number">5</div>
-          <div class="column _center">
-            <span class="item__currency">$</span>
-            <p class="item__text">Per / month</p>
+          <div class="packages__advantages advantages">
+            <p class="advantages_value">Only 2 Operators</p>
+            <p class="advantages_value">Notifications</p>
+            <p class="advantages_value">Landing Pages</p>
           </div>
+          <a href="" class="packages_btn"><span class="packages__text">Order Now</span></a>
         </div>
-        <div class="packages__advantages advantages">
-          <p class="advantages_value">5+ Operators</p>
-          <p class="advantages_value">Notifications</p>
-          <p class="advantages_value">Landing Pages</p>
-        </div>
-        <a href="" class="packages_btn"><span class="packages__text">Order Now</span></a>
-      </div>
-      <div class="packages_item">
-        <h4 class="item__title">Premium</h4>
-        <p class="item__description">Brief price description</p>
-        <div class="item__price">
-          <div class="item__number">10</div>
-          <div class="column _center">
-            <p class="item__currency">$</p>
-            <p class="item__text">Per / month</p>
+        <div class="packages_item">
+          <h4 class="item__title">Standard</h4>
+          <p class="item__description">Brief price description</p>
+          <div class="item__price">
+            <div class="item__number">5</div>
+            <div class="column _center">
+              <span class="item__currency">$</span>
+              <p class="item__text">Per / month</p>
+            </div>
           </div>
+          <div class="packages__advantages advantages">
+            <p class="advantages_value">5+ Operators</p>
+            <p class="advantages_value">Notifications</p>
+            <p class="advantages_value">Landing Pages</p>
+          </div>
+          <a href="" class="packages_btn"><span class="packages__text">Order Now</span></a>
         </div>
-        <div class="packages__advantages advantages">
-          <p class="advantages_value">10+ Operators</p>
-          <p class="advantages_value">Notifications</p>
-          <p class="advantages_value">Landing Pages</p>
+        <div class="packages_item">
+          <h4 class="item__title">Premium</h4>
+          <p class="item__description">Brief price description</p>
+          <div class="item__price">
+            <div class="item__number">10</div>
+            <div class="column _center">
+              <p class="item__currency">$</p>
+              <p class="item__text">Per / month</p>
+            </div>
+          </div>
+          <div class="packages__advantages advantages">
+            <p class="advantages_value">10+ Operators</p>
+            <p class="advantages_value">Notifications</p>
+            <p class="advantages_value">Landing Pages</p>
+          </div>
+          <a href="" class="packages_btn"><span class="packages__text">Order Now</span></a>
         </div>
-        <a href="" class="packages_btn"><span class="packages__text">Order Now</span></a>
       </div>
-    </div> 
     </section>
     <section class="main__feedback feedback">
       <h4 class="feedback__header">Send a message</h4>
@@ -533,7 +570,7 @@
         <button class="mode__btn"><span class="mode__submit">Sign up Now</span></button>
       </form>
     </div>
-    <p>Made With Love By Figmaland All Right Reserved</p>  
+    <p>Made With Love By Figmaland All Right Reserved</p>
   </footer>
 
 </body>
