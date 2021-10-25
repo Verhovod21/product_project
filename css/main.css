@@ -609,7 +609,7 @@ information {
 .slide__container {
   display: flex;
   box-sizing: border-box;
-  max-width: 100%;
+  width: 100%;
   width: auto;
   margin-bottom: 22px;
   object-fit: contain;
