@@ -646,7 +646,7 @@ information {
   font-weight: 700;
 }
 .container_img {
-  max-width: 100%;
+  width: 100%;
 }
 .slides__handler {
   margin-bottom: 140px;
