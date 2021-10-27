@@ -2,10 +2,10 @@
  .header__burger+label {
    display: block;
  }
- .header__list {
+ .header__nav {
    display: none;
  }
- .login {
+ .auth {
   display: none;
   }
   .header__wrapper {
@@ -15,16 +15,25 @@
   /*===================================main============================================*/
   /*===========================introduction==========================*/
   .introduction {
-  padding: 8px 78px 1px 78px;
+    padding: 8px 78px 1px 78px;
   } 
   .container {
+    width: 95%;
+    align-items: center;
+    margin: 0 auto 40px;
+  }
+  .section {
+    margin-bottom: 0 15px 10px;
+
+  }
+  .section._xs {
     flex-direction: column;
     align-items: center;
   }
-  .container._reverse {
-  flex-direction: column-reverse;
-    align-items: center;
+  .section._reverse {
+    flex-direction: column-reverse;
   }
+ 
   .introduction__picture {
     justify-content: center;
   }
@@ -39,20 +48,28 @@
   .content__description {
     text-align: center;
   }
+  .tile {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .tile__item {
+    min-width: 45%;
+    margin-bottom: 20px;
+  }
   /*=======================information=======================*/
   .information {
-  width: 100%;
-  padding: 8px 78px 1px 78px; 
+    margin: 0 20px;
   }
   .count {
-  padding: 15px 40px;
-  margin-right: 0px;
+    max-width: 55%;
+    padding: 15px 0px;
+    margin-right: 0px;
   }
   .count__foreword {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
   }
   .information__picture._secondary {
-    margin-right: 0;
+    margin-right: 15px;
   }
   .count__title {
     margin-bottom: 15px;
@@ -82,7 +99,7 @@
   }
   /*==========================slides===============================*/
   .box {
-  flex-direction: column;
+    flex-direction: column;
   }
   .slide {
     display: flex;
@@ -94,6 +111,9 @@
   .handler {
     display: none;
   }
+    .main__price {
+    margin-bottom: 130px;
+  }
   /*========================feedback==========================*/
   .feedback {
   min-width: 90%;
@@ -101,16 +121,21 @@
 }
 @media (max-width: 768px) {
   .tools__btn._primery {
-  padding: 15px 24px 15px 24px;
-}
-.introduction__content {
-  margin-right: 0;
-}
-.tools__btn._play {
-  display: flex;
-  align-items: center;
-  padding: 17px 10px 15px 10px;
-}
+    padding: 15px 24px 15px 24px;
+  }
+  .container {
+    width: 95%;
+    align-items: center;
+    margin: 0 auto 5px;
+  }
+  .introduction__content {
+    margin-right: 0;
+  }
+  .tools__btn._play {
+    display: flex;
+    align-items: center;
+    padding: 17px 10px 15px 10px;
+  }
   .tile {
     flex-direction: column;
     align-items: center;
@@ -137,18 +162,20 @@
   .presentation__title {
     text-align: center;
   }
-  .container._interval {
-    max-width: 100%;
+  .presentation__description {
+    width: 100%;
   }
   .packages {
     display: flex;
-    width: 79%;
+    width: 100%;
     flex-direction: column;
+    align-items: center;
   }
-  .elem_text {
+  .elem__text {
     padding: 3px 3px;
   }
-  .packages_item {
+  .packages__item {
+    min-width: 45%;
     margin-bottom: 32px;
   }
   .feedback {
@@ -176,9 +203,9 @@
     margin-bottom: 30px;
   }
   .mode {
-  width: 90%;
-  align-items: center;
-  margin-bottom: 30px;
+    width: 90%;
+    align-items: center;
+    margin-bottom: 30px;
   }
   .mode__title {
     text-align: center;

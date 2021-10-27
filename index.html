@@ -16,7 +16,7 @@
 
 <body>
   <header class="header">
-    <div class="header__wrapper">
+    <div class="container _between">
       <a href="#" class="header__logo  logo">
       <span class="logo__icon">
         <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,33 +34,33 @@
         Product
       </h3>
     </a>
-      <ul class="header__list list">
-        <li class="list__item _distance">
-          <a href="#" class="list__link">
-          <span class="list__name _active">Product</span>
+      <ul class="header__nav nav">
+        <li class="nav__item _distance">
+          <a href="#" class="nav__link">
+          <span class="nav__name _active">Product</span>
         </a>
         </li>
-        <li class="list__item _distance">
-          <a href="#" class="list__link">
-          <span class="list__name">Customers</span>
+        <li class="nav__item _distance">
+          <a href="#" class="nav__link">
+          <span class="nav__name">Customers</span>
         </a>
         </li>
-        <li class="list__item _distance">
-          <a href="#" class="list__link">
-          <span class="list__name">Pricing</span>
+        <li class="nav__item _distance">
+          <a href="#" class="nav__link">
+          <span class="nav__name">Pricing</span>
         </a>
         </li>
-        <li class="list__item">
-          <a href="#" class="list__link ">
-          <span class="list__name">Resources</span>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+          <span class="nav__name">Resources</span>
         </a>
         </li>
       </ul>
-      <div class="header__login login">
-        <a href="#" class="login__link _secondary _distance">
+      <div class="header__auth auth">
+        <a href="#" class="auth__btn btn _secondary _distance">
         <span class="link__text _secondary">Sign In</span>
       </a>
-        <a href="#" class="login__link _primery _distance">
+        <a href="#" class="auth__btn  btn _primery _distance">
         <span class="link__text">Sign Up</span>
       </a>
         <div class="header__theme theme">
@@ -81,24 +81,24 @@
             </div>
             <div class="header__drop">
               <ul>
-                <li class="list__item ">
-                  <a href="#" class="list__link">
-                    <span class="list__name _active _white">Product</span>
+                <li class="nav__item ">
+                  <a href="#" class="nav__link">
+                    <span class="nav__name _active _white">Product</span>
                   </a>
                 </li>
-                <li class="list__item">
-                  <a href="#" class="list__link">
-                    <span class="list__name _white">Customers</span>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    <span class="nav__name _white">Customers</span>
                   </a>
                 </li>
-                <li class="list__item ">
-                  <a href="#" class="list__link">
-                    <span class="list__name _white">Pricing</span>
+                <li class="nav__item ">
+                  <a href="#" class="nav__link">
+                    <span class="nav__name _white">Pricing</span>
                   </a>
                 </li>
-                <li class="list__item">
-                  <a href="#" class="list__link">
-                    <span class="list__name _white">Resources</span>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    <span class="nav__name _white">Resources</span>
                   </a>
                 </li>
               </ul>
@@ -107,20 +107,21 @@
     </div>
   </header>
   <main class="main">
-    <section class="main__introduction introduction">
-      <div class="container _reverse">
-        <div class="introduction__content content">
-          <h1 class="content__title">Work at the speed of thought</h1>
-          <p class="content__description">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next
-            user experience.
-          </p>
-          <div class="content__tools tools">
-            <a href="#" class="tools__btn _primery">
+    <section class="main__introduction">
+      <div class="container _column">
+        <div class="introduction__section section _xs _reverse">
+          <div class="introduction__content content">
+            <h1 class="title _xl">Work at the speed of thought</h1>
+            <p class="content__description">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next
+              user experience.
+            </p>
+            <div class="content__tools tools">
+              <a href="#" class="tools__btn _primery">
             <span class="tools__text _primery">
               Get started
             </span>
           </a>
-            <a href="#" class="tools__btn _play">
+              <a href="#" class="tools__btn _play">
             <span class="tools__icon">
               <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg"> 
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8516 8.53032C16.591 8.96531 16.591 10.0347 15.8516 10.4697L2.1954 18.5027C1.44543 18.9439 0.5 18.4031 0.5 17.533V1.46697C0.5 0.596876 1.44543 0.0561381 2.1954 0.497293L15.8516 8.53032Z" fill="#02897A"/>
@@ -130,20 +131,20 @@
               Watch the Video
             </span>
           </a>
+            </div>
           </div>
+          <picture class="introduction__picture">
+            <source srcset="./img/main/amico_size_s.png" media="(max-width: 786px)">
+            <source srcset="./img/main/amico_size_l.png" media="(max-width: 1024px)">
+            <source srcset="./img/main/amico_size_m.png" media="(max-width: 1225px)">
+            <img alt="" src="./img/main/amico_size_l.png">
+          </picture>
         </div>
-        <picture class="introduction__picture">
-          <source srcset="./img/main/amico_size_s.png" media="(max-width: 786px)">
-          <source srcset="./img/main/amico_size_l.png" media="(max-width: 1024px)">
-          <source srcset="./img/main/amico_size_m.png" media="(max-width: 1225px)">
-          <img alt="" src="./img/main/amico_size_l.png">
-        </picture>
-      </div>
-      <h3 class="introduction__afterword">Product was Built Specifically for You</h3>
-      <div class="column">
-        <div class="introduction__tile tile">
-          <div class="tile__item">
-            <span class="tile__icon">
+        <div class="introduction__afterword afterword">
+          <h3 class="afterword__title">Product was Built Specifically for You</h3>  
+            <div class="introduction__tile tile">
+              <div class="tile__item">
+                <span class="tile__icon">
             <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1:541)" filter="url(#filter0_d_1:541)">
               <rect x="4" y="1.830078" width="50" height="50" rx="19" fill="#02897A"/>
@@ -164,13 +165,13 @@
               </defs>
             </svg>
           </span>
-            <h5 class="tile__title">First click tests</h5>
-            <p class="tile__description">
-              While most people enjoy casino gambling,
-            </p>
-          </div>
-          <div class="tile__item">
-            <span class="tile__icon">
+                <h5 class="tile__title">First click tests</h5>
+                <p class="tile__description">
+                  While most people enjoy casino gambling,
+                </p>
+              </div>
+              <div class="tile__item">
+                <span class="tile__icon">
             <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1:549)" filter="url(#filter0_d_1:549)">
               <rect x="4" y="0.830078" width="50" height="50" rx="19" fill="#4D8DFF"/>
@@ -191,13 +192,13 @@
               </defs>
             </svg>
           </span>
-            <h5 class="tile__title">Design surveys</h5>
-            <p class="tile__description">
-              Sports betting, lottery and bingo playing for the fun
-            </p>
-          </div>
-          <div class="tile__item">
-            <span class="tile__icon">
+                <h5 class="tile__title">Design surveys</h5>
+                <p class="tile__description">
+                  Sports betting, lottery and bingo playing for the fun
+                </p>
+              </div>
+              <div class="tile__item">
+                <span class="tile__icon">
             <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1:557)" filter="url(#filter0_d_1:557)">
               <rect x="4" y="0.830078" width="50" height="50" rx="19" fill="#740A76"/>
@@ -219,13 +220,13 @@
             </svg>
 
           </span>
-            <h5 class="tile__title">Preference tests</h5>
-            <p class="tile__description">
-              The Myspace page defines the individual.
-            </p>
-          </div>
-          <div class="tile__item _last">
-            <span class="tile__icon">
+                <h5 class="tile__title">Preference tests</h5>
+                <p class="tile__description">
+                  The Myspace page defines the individual.
+                </p>
+              </div>
+              <div class="tile__item _last">
+                <span class="tile__icon">
             <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1:565)" filter="url(#filter0_d_1:565)">
               <rect x="4" y="0.830078" width="50" height="50" rx="19" fill="#F03E3D"/>
@@ -246,20 +247,21 @@
               </defs>
             </svg>
           </span>
-            <h5 class="tile__title">Five second tests</h5>
-            <p class="tile__description">
-              Personal choices and the overall personality of the person.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <a href="#" class="introduction__registration"><span class="introduction__text">SIGN UP NOW</span></a>
+                <h5 class="tile__title">Five second tests</h5>
+                <p class="tile__description">
+                  Personal choices and the overall personality of the person.
+                </p>
+              </div>
+            </div>
+            <div class="wrapper">
+              <a href="#" class="introduction__registration"><span class="introduction__text">SIGN UP NOW</span></a>
+            </div>
         </div>
       </div>
     </section>
-    <section class="main__information information">
-      <div class="column">
-        <div class="container _reverse _interval">
+    <section class="main__information ">
+      <div class="container information">
+        <div class="section _xs _reverse">
           <div class="information_count count">
             <p class="count__foreword">Effortless Validation for</p>
             <h3 class="count__title">Management</h3>
@@ -273,16 +275,14 @@
           <picture class="information__picture">
             <source srcset="./img/main/info_size_xs.png" media="(max-width: 450px)">
             <source srcset="./img/main/info_size_s.png" media="(max-width: 768px)">
-            <source srcset="./img/main/info_size_l.png" media="(max-width: 1024px)">
             <source srcset="./img/main/info_size_m.png" media="(max-width: 1224px)">
             <img src="./img/main/info_size_l.png" alt="">
           </picture>
         </div>
-        <div class="container _interval">
+        <div class="section _xs">
           <picture class="information__picture _secondary">
             <source srcset="./img/main/info_sec_xs.png" media="(max-width: 450px)">
             <source srcset="./img/main/info_sec_s.png" media="(max-width: 768px)">
-            <source srcset="./img/main/info_sec_l.png" media="(max-width: 1024px)">
             <source srcset="./img/main/info_sec_m.png" media="(max-width: 1224px)">
             <img src="./img/main/info_sec_l.png" alt="">
           </picture>
@@ -327,8 +327,8 @@
             </div>
           </div>
         </div>
-        <div class="container _reverse _interval">
-          <div class="information_count count">
+        <div class="section _xs _reverse ">
+          <div class="count">
             <p class="count__foreword">Optimisation for</p>
             <h3 class="count__title">Collaborative</h3>
             <p class="count__description _general">Few would argue that, despite the advancements of feminism over the past three decades, women still face a double
@@ -341,91 +341,88 @@
           <picture class="information__picture _top">
             <source srcset="./img/main/info_th_xs.png" media="(max-width: 450px)">
             <source srcset="./img/main/info_th_s.png" media="(max-width: 768px)">
-            <source srcset="./img/main/info_th_l.png" media="(max-width: 1224px)">
             <source srcset="./img/main/info_th_m.png" media="(max-width: 1224px)">
             <img src="./img/main/info_th_l.png" alt="">
           </picture>
         </div>
       </div>
     </section>
-    <div class="decorator">
-      <section class="main__presentation presentation">
+    <section class="main__presentation presentation decorator">
+      <div class="container _column">
         <div class="presentation__header">
-          <div class="column">
-            <h3 class="presentation__title">Quick & Easy Process</h3>
-            <p class="presentation__description">Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page,
-              Ux/UI?
-            </p>
-          </div>
+          <h3 class="presentation__title">Quick & Easy Process</h3>
+          <p class="presentation__description">Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page,
+            Ux/UI?
+          </p>
         </div>
         <div class="presentation__review review">
           <div class="review__part _left">
             <div class="review__elem elem _left">
-              <div class="emem_case _left">
+              <div class="emem__case _left">
                 <img src="./img/main/avatar_1.png" alt="">
               </div>
-              <div class="elem_message _left">
-                <p class="elem_text">I can take care of your pitch</p>
+              <div class="elem__message _left">
+                <p class="elem__text">I can take care of your pitch</p>
               </div>
             </div>
             <div class="review__elem elem _right">
-              <div class="elem_message _right">
-                <p class="elem_text">I can design you website</p>
+              <div class="elem__message _right">
+                <p class="elem__text">I can design you website</p>
               </div>
-              <div class="emem_case">
+              <div class="emem__case">
                 <img src="./img/main/avatar_2.png" alt="">
               </div>
             </div>
           </div>
           <div class="review__part _right">
             <div class="review__elem elem _right">
-              <div class="elem_message _right">
-                <p class="elem_text">I can prototype your app</p>
+              <div class="elem__message _right">
+                <p class="elem__text">I can prototype your app</p>
               </div>
-              <div class="emem_case">
+              <div class="emem__case">
                 <img src="./img/main/avatar_3.png" alt="">
               </div>
             </div>
             <div class="review__elem elem _left">
-              <div class="emem_case">
+              <div class="emem__case">
                 <img src="./img/main/avatar_4.png" alt="">
               </div>
-              <div class="elem_message _right _last">
-                <p class="elem_text">I can help marketing strategy</p>
+              <div class="elem__message _right _last">
+                <p class="elem__text">I can help marketing strategy</p>
               </div>
             </div>
           </div>
         </div>
         <a href="" class="presentation__link"><span class="presentation_value"> Contact our expert</span></a>
-    </div>
-    <div class="information__slides slides">
-      <h2 class="slides__header">Contents Strategies</h2>
-      <p class="slides__description">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
-      <div class="slides__box box">
-        <div class="box__slide slide">
-          <div class="slide__container container">
-            <img class="container_img" src="./img/main/slide_1.png" alt="">
+
+        <div class="information__slides slides">
+          <h2 class="slides__header">Contents Strategies</h2>
+          <p class="slides__description">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+          <div class="slides__box box">
+            <div class="box__slide slide">
+              <div class="slide__container">
+                <img class="container__img" src="./img/main/slide_1.png" alt="">
+              </div>
+              <span class="slide__info">By <span class="slide__autor">Wahid Ari |</span> 03 March 2019</span>
+              <h4 class="slide__title">Increasing Prosperity With Positive Thinking</h4>
+            </div>
+            <div class="box__slide slide">
+              <div class="slide__container">
+                <img class="container__img" src="./img/main/slide_2.png" alt="">
+              </div>
+              <span class="slide__info">By <span class="slide__autor">Wahid Ari </span>| 03 March 2019</span>
+              <h4 class="slide__title">Motivation Is The First Step To Success</h4>
+            </div>
+            <div class="box__slide slide">
+              <div class="slide__container">
+                <img class="container__img" src="./img/main/slide_3.png" alt="">
+              </div>
+              <span class="slide__info">By <span class="slide__autor">Wahid Ari |</span> 03 March 2019</span>
+              <h4 class="slide__title">Success Steps For Your Personal Or Business</h4>
+            </div>
           </div>
-          <span class="slide__info">By <span class="slide__autor">Wahid Ari |</span> 03 March 2019</span>
-          <h4 class="slide__title">Increasing Prosperity With Positive Thinking</h4>
         </div>
-        <div class="box__slide slide">
-          <div class="slide__container">
-            <img class="container_img" src="./img/main/slide_2.png" alt="">
-          </div>
-          <span class="slide__info">By <span class="slide__autor">Wahid Ari </span>| 03 March 2019</span>
-          <h4 class="slide__title">Motivation Is The First Step To Success</h4>
-        </div>
-        <div class="box__slide slide">
-          <div class="slide__container">
-            <img class="container_img" src="./img/main/slide_3.png" alt="">
-          </div>
-          <span class="slide__info">By <span class="slide__autor">Wahid Ari |</span> 03 March 2019</span>
-          <h4 class="slide__title">Success Steps For Your Personal Or Business</h4>
-        </div>
-      </div>
-    </div>
-    <a href="#" class="slides__handler handler">
+        <a href="#" class="slides__handler handler">
       <span>
         <svg width="69" height="16" viewBox="0 0 69 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle class="handler__point" cx="8.5" cy="8" r="8" fill="#EFEFEF"/>
@@ -434,62 +431,65 @@
         </svg>
       </span>
     </a>
+      </div>
+      </div>
     </section>
-    </div>
-    <section class="price">
-      <h2 class="price__title">Price Table</h2>
-      <p class="price__description">We offer competitive price</p>
-      <div class="price__packages packages">
-        <div class="packages_item">
-          <h4 class="item__title">Free</h4>
-          <p class="item__description">Brief price description</p>
-          <div class="item__price">
-            <div class="item__number">0</div>
-            <div class="column _center">
-              <p class="item__currency">$</p>
-              <p class="item__text">Per / month</p>
+    <section class="main__price">
+      <div class="container price">
+        <h2 class="price__title">Price Table</h2>
+        <p class="price__description">We offer competitive price</p>
+        <div class="price__packages packages">
+          <div class="packages__item">
+            <h4 class="item__title">Free</h4>
+            <p class="item__description">Brief price description</p>
+            <div class="item__price">
+              <div class="item__number">0</div>
+              <div class="column _center">
+                <p class="item__currency">$</p>
+                <p class="item__text">Per / month</p>
+              </div>
             </div>
-          </div>
-          <div class="packages__advantages advantages">
-            <p class="advantages_value">Only 2 Operators</p>
-            <p class="advantages_value">Notifications</p>
-            <p class="advantages_value">Landing Pages</p>
-          </div>
-          <a href="" class="packages_btn"><span class="packages__text">Order Now</span></a>
-        </div>
-        <div class="packages_item">
-          <h4 class="item__title">Standard</h4>
-          <p class="item__description">Brief price description</p>
-          <div class="item__price">
-            <div class="item__number">5</div>
-            <div class="column _center">
-              <span class="item__currency">$</span>
-              <p class="item__text">Per / month</p>
+            <div class="packages__advantages advantages">
+              <p class="advantages__value">Only 2 Operators</p>
+              <p class="advantages__value">Notifications</p>
+              <p class="advantages__value">Landing Pages</p>
             </div>
+            <a href="" class="packages__btn"><span class="packages__text">Order Now</span></a>
           </div>
-          <div class="packages__advantages advantages">
-            <p class="advantages_value">5+ Operators</p>
-            <p class="advantages_value">Notifications</p>
-            <p class="advantages_value">Landing Pages</p>
-          </div>
-          <a href="" class="packages_btn"><span class="packages__text">Order Now</span></a>
-        </div>
-        <div class="packages_item">
-          <h4 class="item__title">Premium</h4>
-          <p class="item__description">Brief price description</p>
-          <div class="item__price">
-            <div class="item__number">10</div>
-            <div class="column _center">
-              <p class="item__currency">$</p>
-              <p class="item__text">Per / month</p>
+          <div class="packages__item">
+            <h4 class="item__title">Standard</h4>
+            <p class="item__description">Brief price description</p>
+            <div class="item__price">
+              <div class="item__number">5</div>
+              <div class="column _center">
+                <span class="item__currency">$</span>
+                <p class="item__text">Per / month</p>
+              </div>
             </div>
+            <div class="packages__advantages advantages">
+              <p class="advantages__value">5+ Operators</p>
+              <p class="advantages__value">Notifications</p>
+              <p class="advantages__value">Landing Pages</p>
+            </div>
+            <a href="" class="packages__btn"><span class="packages__text">Order Now</span></a>
           </div>
-          <div class="packages__advantages advantages">
-            <p class="advantages_value">10+ Operators</p>
-            <p class="advantages_value">Notifications</p>
-            <p class="advantages_value">Landing Pages</p>
+          <div class="packages__item">
+            <h4 class="item__title">Premium</h4>
+            <p class="item__description">Brief price description</p>
+            <div class="item__price">
+              <div class="item__number">10</div>
+              <div class="column _center">
+                <p class="item__currency">$</p>
+                <p class="item__text">Per / month</p>
+              </div>
+            </div>
+            <div class="packages__advantages advantages">
+              <p class="advantages__value">10+ Operators</p>
+              <p class="advantages__value">Notifications</p>
+              <p class="advantages__value">Landing Pages</p>
+            </div>
+            <a href="" class="packages__btn"><span class="packages__text">Order Now</span></a>
           </div>
-          <a href="" class="packages_btn"><span class="packages__text">Order Now</span></a>
         </div>
       </div>
     </section>
