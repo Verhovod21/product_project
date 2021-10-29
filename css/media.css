@@ -98,7 +98,7 @@
     margin-bottom: 70px;
   }
   /*==========================slides===============================*/
-  .box {
+  .slider {
     flex-direction: column;
   }
   .slide {
@@ -111,7 +111,7 @@
   .handler {
     display: none;
   }
-    .main__price {
+  .main__price {
     margin-bottom: 130px;
   }
   /*========================feedback==========================*/
@@ -120,9 +120,21 @@
   }
 }
 @media (max-width: 768px) {
-  .tools__btn._primery {
-    padding: 15px 24px 15px 24px;
+  .title._xl {
+  text-align: center;
+}
+.tool__btn._primery {
+    padding: 18px 24px 15px 24px;
   }
+
+.tool__btn._play {
+  display: flex;
+  align-items: center;
+  padding: 10px 7px 19px 7px;
+}
+.tool__text {
+  font-weight: 400;
+}
   .container {
     width: 95%;
     align-items: center;
@@ -131,7 +143,7 @@
   .introduction__content {
     margin-right: 0;
   }
-  .tools__btn._play {
+  .tool__btn._play {
     display: flex;
     align-items: center;
     padding: 17px 10px 15px 10px;
@@ -156,9 +168,6 @@
     max-width: 90%;
     padding: 10px 3px;
   }
-  .presentation {
-    padding: 10px 10px;
-  }
   .presentation__title {
     text-align: center;
   }
@@ -175,8 +184,9 @@
     padding: 3px 3px;
   }
   .packages__item {
-    min-width: 45%;
+    min-width: 35%;
     margin-bottom: 32px;
+    padding: 30px 10px;
   }
   .feedback {
      padding: 52px 15px;
@@ -187,7 +197,10 @@
   .column {
     align-items: stretch;
   }
-  .contents {
+  .content {
+    padding: 0;
+  }
+  .keeper {
     flex-direction: column;
     align-items: center;
     min-width: 88%;
