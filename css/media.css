@@ -122,19 +122,22 @@
 @media (max-width: 768px) {
   .title._xl {
   text-align: center;
-}
-.tool__btn._primery {
-    padding: 18px 24px 15px 24px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
   }
 
-.tool__btn._play {
-  display: flex;
-  align-items: center;
-  padding: 10px 7px 19px 7px;
-}
-.tool__text {
-  font-weight: 400;
-}
+  .btn._primery {
+    padding: 18px 24px 15px 24px;
+  }
+  .btn._play {
+    display: flex;
+    align-items: center;
+    padding: 18px 7px 19px 7px;
+  }
+  .tool__text {
+    font-weight: 400;
+  }
   .container {
     width: 95%;
     align-items: center;
