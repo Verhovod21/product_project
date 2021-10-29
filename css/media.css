@@ -123,12 +123,12 @@
   .title._xl {
   text-align: center;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 40px;
   }
 
   .btn._primery {
-    padding: 18px 24px 15px 24px;
+    padding: 18px 10px 15px 10px;
   }
   .btn._play {
     display: flex;
@@ -146,7 +146,7 @@
   .introduction__content {
     margin-right: 0;
   }
-  .tool__btn._play {
+  .btn._play {
     display: flex;
     align-items: center;
     padding: 17px 10px 15px 10px;
